@@ -1,0 +1,15 @@
+{
+  "manifest_version": 2,
+  "name": "Splitwise Enhancement Suite",
+  "version": "1.0.0",
+  "description": "Adds a couple of useful features to Splitwise web interface",
+  "content_scripts": [
+    {
+      "matches": ["https://secure.splitwise.com/*"],
+      "js": ["content-script.js"]
+    }
+  ],
+  "web_accessible_resources": [
+    "src/*"
+  ]
+}
